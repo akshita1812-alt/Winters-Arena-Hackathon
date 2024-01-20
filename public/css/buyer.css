@@ -1,0 +1,40 @@
+.topbar {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+.cards {
+    display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 10px;
+}
+.card {
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+.card:hover {
+    transform: translateY(-10px);
+}
+.card img {
+    width: 100%;
+    height: auto;
+}
+.card-body {
+    padding: 10px;
+}
+.card-body h5 {
+    margin: 0;
+    font-size: 18px;
+}
+.card-body p {
+    margin: 0;
+    font-size: 14px;
+}

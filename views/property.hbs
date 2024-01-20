@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="../public/css/property.css" rel="stylesheet">
+     <script src="https://kit.fontawesome.com/a160089f0b.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Property</title>
+</head>
+<body>
+    <header>
+      <h1>Property Details</h1>
+    </header>
+    <main>
+      <section>
+        <h2>Property Title</h2>
+        <img src="/img/p1.jpeg">
+        <p>Description</p>
+        {{!-- <h2>{{property.title}}</h2>
+        <img src="{{property.image}}" alt="{{property.title}}">
+        <p>{{property.description}}</p> --}}
+      </section>
+      <aside>
+        <h3>Property Details</h3>
+        <ul>
+          <li><strong>Price:</strong> $99.99{{property.price}}</li>
+          <li><strong>Location:</strong>Berlin {{property.location}}</li>
+          <li><strong>Type:</strong>House {{property.type}}</li>
+        </ul>
+        <button class="btn" onclick="displayText()">Buy</button>
+        <div id="textField" style="display: none;">
+ <i class="fa-solid fa-square-check"></i> The Request has been Generated.
+</div>
+      </aside>
+    </main>
+    <footer>
+      <p>&copy; {{currentYear}} My Property Listings</p>
+    </footer>
+  <script>
+    function displayText() {
+  var text = document.getElementById("textField");
+  text.style.display = "block";
+}
+  </script>  
+</body>
+</html>
